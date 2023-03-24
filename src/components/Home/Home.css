@@ -1,0 +1,105 @@
+
+section{
+    padding: 60 0;
+}
+h1 {
+    font-size: calc(3rem + 20px);;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin-top: 2rem;
+}
+
+h1 span {
+    -webkit-background-clip: text;
+    background-image: linear-gradient(25deg,#2600fc,#ff00ea);
+    color: transparent;
+    display: block;
+}
+
+.bit{
+     position: absolute;
+     z-index: 100;
+     top:25%;
+     left: 10%;
+     animation: move 2s infinite;
+}
+.ether{
+    position: absolute;
+    z-index: 100;
+    top:25%;
+    right: 10%;
+    animation: move 2s infinite;
+}
+
+
+.home__moneys{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    color: #fff;
+    gap: 2rem;
+}
+.home__text{
+    display: flex;
+    gap:0.5rem;
+}
+.home__text h4{
+ 
+    gap:0.5rem;
+    text-transform: capitalize;
+}
+
+.home__text span{
+   font-weight: 800;
+}
+
+
+.red{
+    color: #df2020;
+}
+.green{
+    color:#0ecb81
+}
+
+
+.home__usd{
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+
+@keyframes move {
+    0% , 100%{
+        transform: translateY(0) ;
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    
+}
+
+
+
+@media screen and ( max-width:1080px){
+.home__container h1{
+    font-size: calc(2rem + 10px);
+}
+}
+
+
+@media screen and ( max-width:750px){
+    .home__container h1{
+        font-size: calc(1rem + 10px);
+    }
+    .home__moneys{
+        gap:0.5rem;
+        flex-wrap: wrap;
+        margin-left: 4rem;
+    }
+    .home__moneys img{
+        width: 20%;
+        margin-left: 2rem;
+    }
+}

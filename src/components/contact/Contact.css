@@ -1,0 +1,138 @@
+#contact{
+    width: 1200px;
+    margin: 11rem auto;
+    position: relative;
+    
+}
+.contact__title{
+    text-align: center;
+    
+}
+.contact__span{
+    color: #fff;
+}
+
+
+.bitcoin{
+ position: absolute;
+ top: 0;
+ animation: move 2s infinite;
+}
+
+
+.ethereum{
+    position: absolute;
+    top:0;
+    right:0;
+    animation: move 2s infinite;
+}
+
+.contact__btn{
+    margin: auto;
+    text-align: center;
+    
+
+}
+.contact__btn button {
+    background: linear-gradient(25deg,#2600fc,#ff00ea);
+    border-radius: 10rem;
+   color:#fff;
+   padding: 0.8rem 3rem;
+   border: none;
+   outline: none;
+   margin-top: 2rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+
+@keyframes move {
+    0% , 100%{
+        transform: translateY(0) ;
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    
+}
+
+
+@media screen and (max-width:1280px) {
+    .bitcoin{
+        position: absolute;
+        top: 0;
+        left: 8rem;
+       }
+       
+       
+       .ethereum{
+           position: absolute;
+           top:0;
+           right:8rem;
+           animation: move 2s infinite;
+       }
+}
+
+
+@media screen and (max-width:1080px){
+    .bitcoin{
+       
+        top: 0;
+        left: 8rem;
+       }
+       
+       
+       .ethereum{
+         
+           top:0;
+           right:8rem;
+         
+       }
+       .title{
+        font-size: 3.5rem;
+       }
+
+}
+
+
+@media screen and (max-width:992px){
+    .title{
+        font-size: 2rem;
+       }
+       .bitcoin{
+        left: 10rem;
+        
+       }
+       
+       
+       .ethereum{
+       right: 10rem;
+       }
+
+
+       #contact{
+        width: 950px;
+        
+      
+        
+    }
+}
+
+
+@media screen and (max-width:992px){
+    #contact{
+        width:100%;
+    }
+
+    .bitcoin{
+        left:0rem;
+        
+       }
+       
+       
+       .ethereum{
+       right: 0rem;
+       }
+
+      
+}
