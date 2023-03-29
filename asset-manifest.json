@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/cryptosearch/static/css/main.c4691d61.css",
+    "main.js": "/cryptosearch/static/js/main.9fc59f98.js",
+    "static/js/787.1cbc1c2f.chunk.js": "/cryptosearch/static/js/787.1cbc1c2f.chunk.js",
+    "static/media/hand.png": "/cryptosearch/static/media/hand.39852b7511b28d44406f.png",
+    "static/media/bitcoin.png": "/cryptosearch/static/media/bitcoin.e146d46fb598ae0d8f43.png",
+    "static/media/ethe.png": "/cryptosearch/static/media/ethe.c6cffe78f0c6abc85da9.png",
+    "static/media/footer.png": "/cryptosearch/static/media/footer.e33c036e05f949cf81cb.png",
+    "static/media/bnb.webp": "/cryptosearch/static/media/bnb.6572a1f71f2c05d459b5.webp",
+    "static/media/ethereum.webp": "/cryptosearch/static/media/ethereum.2c67966e128ddce9507d.webp",
+    "static/media/Tether.webp": "/cryptosearch/static/media/Tether.b3545f543b12e10b5c5a.webp",
+    "static/media/bit.webp": "/cryptosearch/static/media/bit.a623fea0ed70d1aa569b.webp",
+    "static/media/discord.svg": "/cryptosearch/static/media/discord.d1d464bd6481a21fcde599e0d8699273.svg",
+    "static/media/twitter.svg": "/cryptosearch/static/media/twitter.740c588fcf1776067d15107863dbf2bc.svg",
+    "index.html": "/cryptosearch/index.html",
+    "main.c4691d61.css.map": "/cryptosearch/static/css/main.c4691d61.css.map",
+    "main.9fc59f98.js.map": "/cryptosearch/static/js/main.9fc59f98.js.map",
+    "787.1cbc1c2f.chunk.js.map": "/cryptosearch/static/js/787.1cbc1c2f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4691d61.css",
+    "static/js/main.9fc59f98.js"
+  ]
+}
