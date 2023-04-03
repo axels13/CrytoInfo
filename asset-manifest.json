@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cryptosearch/static/css/main.c4691d61.css",
-    "main.js": "/cryptosearch/static/js/main.9fc59f98.js",
+    "main.js": "/cryptosearch/static/js/main.3499d0f0.js",
     "static/js/787.1cbc1c2f.chunk.js": "/cryptosearch/static/js/787.1cbc1c2f.chunk.js",
     "static/media/hand.png": "/cryptosearch/static/media/hand.39852b7511b28d44406f.png",
     "static/media/bitcoin.png": "/cryptosearch/static/media/bitcoin.e146d46fb598ae0d8f43.png",
@@ -15,11 +15,11 @@
     "static/media/twitter.svg": "/cryptosearch/static/media/twitter.740c588fcf1776067d15107863dbf2bc.svg",
     "index.html": "/cryptosearch/index.html",
     "main.c4691d61.css.map": "/cryptosearch/static/css/main.c4691d61.css.map",
-    "main.9fc59f98.js.map": "/cryptosearch/static/js/main.9fc59f98.js.map",
+    "main.3499d0f0.js.map": "/cryptosearch/static/js/main.3499d0f0.js.map",
     "787.1cbc1c2f.chunk.js.map": "/cryptosearch/static/js/787.1cbc1c2f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c4691d61.css",
-    "static/js/main.9fc59f98.js"
+    "static/js/main.3499d0f0.js"
   ]
 }
