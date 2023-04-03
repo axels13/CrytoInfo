@@ -5,10 +5,24 @@ import "./Navbar.css";
 import { BiMenu } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
-const Navbar = () => {
+const Navbar = ({ homeRef, marketRef, chooseRef, joinRef }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const scrollTohomeRef = () => {
+    homeRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollTomarketRef = () => {
+    marketRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollTochooseRef = () => {
+    chooseRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollTojoinRef = () => {
+    joinRef.current.scrollIntoView({ behavior: "smooth" });
   };
   return (
     <header>
@@ -31,17 +45,17 @@ const Navbar = () => {
                 <AiOutlineClose />
               </span>
               <li>
-                <Link>Home</Link>
+                <Link onClick={scrollTohomeRef}>Home</Link>
               </li>
               <li>
-                <Link>Market</Link>
+                <Link onClick={scrollTomarketRef}>Market</Link>
               </li>
               <li>
-                <Link>Choose Us</Link>
+                <Link onClick={scrollTochooseRef}>Choose Us</Link>
               </li>
               <li>
                 {" "}
-                <Link>Join</Link>
+                <Link onClick={scrollTojoinRef}>Join</Link>
               </li>
             </ul>
           </div>

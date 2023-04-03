@@ -12,7 +12,7 @@ import ChooseUs from "../chooseUs/ChooseUs";
 import Contact from "../contact/Contact";
 import Footer from "../Footer/Footer";
 
-const Home = () => {
+const Home = ({ homeRef, marketRef, chooseRef, joinRef }) => {
   const [data, setData] = useState({});
 
   const url =
@@ -40,7 +40,7 @@ const Home = () => {
 
   console.log(data);
   return (
-    <section>
+    <section ref={homeRef}>
       <main className="home__container">
         <h1>
           TRACK AND TRADE <span>CRYPTO CURRENCIES</span>
@@ -119,9 +119,9 @@ const Home = () => {
           </div>
         </div>
       )}{" "}
-      <Market />
-      <ChooseUs />
-      <Contact />
+      <Market marketRef={marketRef} />
+      <ChooseUs chooseRef={chooseRef} />
+      <Contact joinRef={joinRef} />
       <Footer />
     </section>
   );

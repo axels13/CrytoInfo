@@ -1,11 +1,11 @@
 import React from "react";
 import "./Choose.css";
 import hand from "../../assets/hand.png";
-const ChooseUs = () => {
+const ChooseUs = ({ chooseRef }) => {
   return (
-    <section id="choose">
+    <section id="choose" ref={chooseRef}>
       <div className="container__aside">
-        <h2 className="title__choose">
+        <h2 className="">
           WHY <span>CHOOSE US</span>
         </h2>
         <div className="grid__container">

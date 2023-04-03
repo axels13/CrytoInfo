@@ -2,9 +2,9 @@ import React from "react";
 import bitcoin from "../../assets/bitcoin.png";
 import ether from "../../assets/ethe.png";
 import "./Contact.css";
-const Contact = () => {
+const Contact = ({ joinRef }) => {
   return (
-    <section id="contact">
+    <section id="contact" ref={joinRef}>
       <aside>
         <div className="contact__title">
           <h1 className="title">

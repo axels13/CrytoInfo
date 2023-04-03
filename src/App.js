@@ -1,17 +1,29 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Route, Router, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 const App = () => {
+  const homeRef = useRef(null);
+  const marketRef = useRef(null);
+  const chooseRef = useRef(null);
+  const joinRef = useRef(null);
   return (
     <div className="app">
-      <Navbar></Navbar>
+      <Navbar
+        homeRef={homeRef}
+        marketRef={marketRef}
+        chooseRef={chooseRef}
+        joinRef={joinRef}
+      />
 
-      <Routes>
-        <Route index path="/" element={<Home />} />
-      </Routes>
+      <Home
+        homeRef={homeRef}
+        marketRef={marketRef}
+        chooseRef={chooseRef}
+        joinRef={joinRef}
+      />
     </div>
   );
 };

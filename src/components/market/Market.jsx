@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./market.css";
 import bitcoin from "../../assets/bitcoin.png";
-const Market = () => {
+const Market = ({ marketRef }) => {
   const [coins, setCoins] = useState([]);
   const [pageNumber, setPageNumber] = useState([]);
   const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=${pageNumber}&sparkline=false
@@ -32,7 +32,7 @@ const Market = () => {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
   return (
-    <section className="market">
+    <section className="market" ref={marketRef}>
       <h2>Market Update</h2>
 
       <div className="market__container">
